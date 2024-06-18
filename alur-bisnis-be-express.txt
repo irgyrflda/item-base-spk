@@ -1,0 +1,31 @@
+1xx Informational
+100 Continue: Server telah menerima header permintaan, dan klien harus melanjutkan untuk mengirim badan permintaan.
+101 Switching Protocols: Klien telah meminta server untuk beralih protokol dan server telah setuju untuk melakukannya.
+2xx Success
+200 OK: Permintaan telah berhasil diproses.
+201 Created: Permintaan telah berhasil dan telah dibuat sumber daya baru sebagai hasilnya.
+202 Accepted: Permintaan telah diterima untuk pemrosesan, tetapi pemrosesan belum selesai.
+204 No Content: Permintaan telah berhasil diproses, tetapi tidak ada konten untuk dikembalikan.
+3xx Redirection
+301 Moved Permanently: Sumber daya yang diminta telah dipindahkan secara permanen ke URL baru.
+302 Found: Sumber daya yang diminta sementara berada di lokasi yang berbeda.
+304 Not Modified: Sumber daya tidak dimodifikasi sejak permintaan terakhir.
+4xx Client Error
+400 Bad Request: Permintaan tidak valid atau tidak dapat dipahami oleh server.
+401 Unauthorized: Permintaan memerlukan autentikasi pengguna.
+403 Forbidden: Server memahami permintaan, tetapi menolak untuk mengizinkannya.
+404 Not Found: Sumber daya yang diminta tidak ditemukan di server.
+405 Method Not Allowed: Metode permintaan tidak diizinkan untuk sumber daya yang diminta.
+409 Conflict: Terjadi konflik dalam permintaan, seperti konflik dalam keadaan sumber daya yang diminta.
+5xx Server Error
+500 Internal Server Error: Terjadi kesalahan di server dan permintaan tidak dapat diselesaikan.
+501 Not Implemented: Server tidak mendukung fungsi yang diperlukan untuk memenuhi permintaan.
+502 Bad Gateway: Server menerima respons yang tidak valid dari server upstream.
+503 Service Unavailable: Server tidak dapat menangani permintaan karena terlalu banyak beban atau sedang dalam pemeliharaan.
+504 Gateway Timeout: Server tidak mendapatkan respons tepat waktu dari server upstream.
+
+create models
+create validation (jika ingin menggunakan validasi)
+create controller
+create routes
+selesai
