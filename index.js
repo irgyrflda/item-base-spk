@@ -8,10 +8,13 @@ const bodyParser = require("body-parser");  //import library body-parser
 const db = require("./src/config/database");  //import config database connecting
 const PORT = process.env.PORT;  //import port BE dari ENV
 const errorHandler = require("./src/middleware/errorHandler");  //import function  error handler
-
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  credentials: true
+};
 app.use(bodyParser.urlencoded({ extended: false })); //persing req.body
 app.use(bodyParser.json()); //psrsing req.body type json
-app.use(cors()); //cors
+app.use(cors(corsOptions)); //cors
 
 app.use('/api-v1', indexRouter); //index router utama
 app.use('/documentation', documantation);

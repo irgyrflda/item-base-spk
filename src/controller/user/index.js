@@ -1,11 +1,11 @@
-const {
-    Login,
-    Register,
-    UpdatePassword
-} = require('./users-controller');
+// const {
+//     Login,
+//     Register,
+//     UpdatePassword
+// } = require('./users-controller');
 
-module.exports = {
-    Login,
-    Register,
-    UpdatePassword
-}
+// module.exports = {
+//     Login,
+//     Register,
+//     UpdatePassword
+// }

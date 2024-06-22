@@ -1,9 +1,15 @@
 //INDEX ROUTES
 const router = require("express").Router();
 
-const User = require('./users-routes'); //import routes user
+const kategoriProduct = require('./kategori-product.routes');
+const product = require('../routes/product.routes');
 
-router.use('/user', User) //url user
+// const User = require('./users-routes'); //import routes user
+
+// router.use('/user', User) //url user
+
+router.use('/kategori', kategoriProduct);
+router.use('/product', product);
 
 module.exports = router //exports router
 //module ini di import di index.js depan

@@ -1,5 +1,9 @@
 // define error handler
 module.exports = (error, req, res, next) => {
+    console.log("================================");
+    console.log("error handler : ", error);
+    console.log("================================");
+    
     const code = error.statusCode || 500;
 
     let data = {
