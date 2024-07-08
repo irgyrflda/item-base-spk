@@ -15,8 +15,8 @@ const TrxRatingProduct = db.define(
             type: DataTypes.NUMBER(11),
             allowNull: true
         },
-        username: {
-            type: DataTypes.STRING(255),
+        id_user: {
+            type: DataTypes.NUMBER(11),
             allowNull: true
         },
         rating: {
